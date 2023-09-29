@@ -32,6 +32,8 @@ Binome :
 - Dylan Latapie
 - Maël Carrié
 
+Lien vers l'autre dépot : https://github.com/IUT-Blagnac/r3-04-qualite-tp1-MaelCarrie/tree/master
+
 == Mise en place
 
 WARNING: Les illustrations utilisent {vscode}, mais peu importe que vous utilisiez un autre IDE comme {eclipse} ou {intellij}, il vous suffit d'adapter à votre IDE (qu'il vous faut apprendre à connaître).
