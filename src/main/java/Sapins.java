@@ -6,7 +6,7 @@
 public class Sapins {
     
     /**
-     * Classe main 
+     * Classe main - CECI EST UN TEST 
      */
     public static void main(String args[]) {
         afficherSapins(5);
