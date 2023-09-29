@@ -8,7 +8,7 @@ public class Sapins {
     /**
      * Classe main 
      */
-    public static void main() {
+    public static void main(String args[]) {
         afficherSapins(5);
     }
 
