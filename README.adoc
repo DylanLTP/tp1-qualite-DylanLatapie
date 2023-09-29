@@ -28,8 +28,9 @@ endif::[]
 //---------------------------------------------------------------
 
 Binome : 
-. Dylan Latapie
-. Maël Carrié
+
+- Dylan Latapie
+- Maël Carrié
 
 == Mise en place
 
