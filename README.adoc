@@ -32,7 +32,7 @@ Binome :
 - Dylan Latapie 3B
 - Maël Carrié 3B
 
-Lien vers l'autre dépot : https://github.com/IUT-Blagnac/r3-04-qualite-tp1-MaelCarrie/tree/master
+Lien vers l'autre dépot : https://github.com/IUT-Blagnac/r3-04-qualite-tp1-MaelCarrie
 
 == Prérequis
 
