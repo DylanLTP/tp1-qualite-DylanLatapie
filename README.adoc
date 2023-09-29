@@ -60,63 +60,43 @@ Vous pouvez aussi importer dans eclipse votre projet maven puis faire exécuter 
 
 == C'est parti
 
-=== 1ère compilation : erreur de comilation
+=== Documentation du projet
 
-WARNING: Les étapes suivantes utilisent les commandes {maven} en ligne de commande, c'est à dire à taper dans un terminal linux, mais vous pouvez utiliser l'équivalent en "click de souris" de votre IDE favori.
+Pour utiliser le projet vous devez suivre les instructions suivantes :
 
-. Lancer `mvn clean`
+. Tout d'abord, nettoyez le projet Maven avec la commande :
 +
-C'est une bonne habitude à prendre (de nettoyer tout ce qui a pu se passer avant).
-+
-. Lancer `mvn compile`
-+
-Observez l'erreur de compilation qui en résulte.
-Par exemple :
-+
-.Erreur de compilation
-image::error1.png["Erreur de compilation", width=80%]
-+
-. Corrigez le code en conséquence.
-+
-.Erreur corrigée
-image::success1.png["Erreur éliminée", width=80%]
-+
-. Observez la création du répertoire `target` qui contient entre autre la version compilée `HelloJava.class` dans le répertoire `target/classes`.
+....
+mvn clean
+....
 
-=== 2ème compilation : construire une application
-
-On ne peut malheureusement pas exécuter d'application puisqu'on n'a pas de main.
-
-. Ajoutez un `main` dans la classe.
+. Ensuite, pour compiler l'application utilisez la commande :
 +
-[%collapsible]
-====
-[source,java]
-----
-class HelloJava {	
-        public static void main(String[] args) {
-		System.out.println("Hello Blagnac");
-	}
+....
+mvn compile
+....
 
-	public void afficherCancan(){
-	}
-}
-----
-====
-+
-. Une fois que vous avez réussi à compiler (`mvn compile`), lancez la fabrication d'une version exécutable :
+. Lancez la fabrication d'une version exécutable avec la commande :
 +
 ....
 mvn package
 ....
 +
-. Observez la création du fichier JAR et testez-le :
+NOTE: Lorsque vous exécutez `mvn package`, la javadoc se génère automatiquement. Vous la trouverez sous forme de site dans le dossier target/apidocs ET sous forme de jar dans le dossier target (tp_qualite-1.0-javadoc.jar).
+
+. Pour générer la Javadoc du projet manuellement, vous pouvez exécuter la commande :
++
+....
+mvn javadoc:javadoc
+....
++
+NOTE: Lors de l'exécution de `mvn javadoc:javadoc`, la javadoc se générera dans le dossier target/site/apidocs.
+
+. Pour tester la version exécutable, exécutez la commande :
++
 ....
 java -jar target/tp_qualite-1.0.jar
 ....
-
-.Et voilà!
-image::success2.png["Ca run!", width=80%]
 
 == Améliorations
 
