@@ -29,39 +29,19 @@ endif::[]
 
 Binome : 
 
-- Dylan Latapie
-- Maël Carrié
+- Dylan Latapie 3B
+- Maël Carrié 3B
 
 Lien vers l'autre dépot : https://github.com/IUT-Blagnac/r3-04-qualite-tp1-MaelCarrie/tree/master
 
-== Mise en place
+== Prérequis
 
-WARNING: Les illustrations utilisent {vscode}, mais peu importe que vous utilisiez un autre IDE comme {eclipse} ou {intellij}, il vous suffit d'adapter à votre IDE (qu'il vous faut apprendre à connaître).
+- Java 17 (jdk-17.0.1)
+- Maven
 
-Le plus simple pour réaliser ce TP est d'utiliser gitpod : rajoutez `gitpod.io/#` devant l'URL de votre dépôt ou cliquez sur le bouton Gitpod si vous en avez un qui s'affiche.
-Mais nous vous conseillons d'utiliser plutôt votre IDE personnel, pour vérifier que votre machine est bien configurer pour l'utiliser pour tous les TPs à suivre (et pouvoir travailler même sans réseau!).
+Vous pouvez utiliser VSCode ou tout IDE compatible mais le plus simple pour utiliser ce projet est d'utiliser gitpod : rajoutez `gitpod.io/#` devant l'URL de votre dépôt ou cliquez sur le bouton Gitpod si vous en avez un qui s'affiche.
 
-.Pour les utilisateurs des machines IUT (merci à Rémy Guibert)
-[WARNING]
-====
-Pour ceux qui veulent lancer les commandes {maven} sur leur machine :
-
-. Placez vous dans le répertoire cloné (par exemple `r3-04-td1-maven-Dupont`)
-. Ouvrez une invite de commande Windows (CMD) dans ce répertoire
-. Tapez la commande :
-+
-....
-set JAVA_HOME=C:\Program Files\Java\jdk-17.0.1
-....
-+
-. Vous pouvez maintenant taper les commandes {maven}
-
-Vous pouvez aussi importer dans eclipse votre projet maven puis faire exécuter à eclipse votre `pom.xml` (menu:Run as...[Maven]).
-====
-
-== C'est parti
-
-=== Documentation du projet
+== Documentation du projet
 
 Pour utiliser le projet vous devez suivre les instructions suivantes :
 
@@ -98,16 +78,3 @@ NOTE: Lors de l'exécution de `mvn javadoc:javadoc`, la javadoc se générera da
 ....
 java -jar target/tp_qualite-1.0.jar
 ....
-
-== Améliorations
-
-. Reprenez un de vos exercices précédents et mettez les sources dans `src/java`.
-. Ajustez éventuellement le `pom.xml` pour que les étapes précédentes produisent les résultats escomptés. Pensez à vérifier que votre fichier .jar est exécutable. Que devez-vous corriger dans votre pom.xml ? Quelle est la commande pour le lancer ?
-. Ajoutez les commentaires vus en dev.
-. Cherchez dans la documentation {maven} les commandes permettant de générer une documentation javadoc, et les adaptions à faire sur votre projet (et éventuellement `pom.xml`) afin que {maven} génère la documentation automatiquement pour vous.
-. Documentez votre projet: remplacez le contenu de ce fichier README.doc par les instructions de compilation, de documentation et de lancement de votre projet. 
-
-== Consignes et rendus
-
-Pour ce TP, il vous faudra simplement rendre le projet complet (`src`) ainsi que la dernière version du fichier `pom.xml` sur votre dépôt et la javadoc de votre code.
-
